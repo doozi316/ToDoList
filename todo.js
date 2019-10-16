@@ -42,6 +42,10 @@ function paintToDo(text){
         id : newId  // 배열이 비어있을 경우 1. 저장된다면 1씩 증가. 
     };
  
+    if (typeof toDoObj.text === "undefined" || toDoObj.text === null|| toDoObj.text === ""){
+        
+        return false;
+    }
     toDos.push(toDoObj); //arry 안에 element 추가
     saveToDos();
 }

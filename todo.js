@@ -43,7 +43,6 @@ function paintToDo(text){
     };
  
     if (typeof toDoObj.text === "undefined" || toDoObj.text === null|| toDoObj.text === ""){
-        
         return false;
     }
     toDos.push(toDoObj); //arry 안에 element 추가
